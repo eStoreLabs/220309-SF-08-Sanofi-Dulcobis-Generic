@@ -226,10 +226,18 @@ html {
       min-height: 100px;
       &__container{
           display: flex;
+          flex-wrap: wrap;
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          a{
+      }
+      &__single{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+            a{
               background: rgb(0,134,97);
               background: linear-gradient(270deg, rgba(0,134,97,1) 0%, rgba(0,100,64,1) 56%);
               color: $white;
@@ -264,7 +272,7 @@ html {
                 color: $white;
               }
           }
-      }
+          }
     }
     .es-section__title{
       font-family: $title;

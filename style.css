@@ -275,11 +275,19 @@ html {
 }
 .es-dulcobis .es-nav__container, #es-dulcobis .es-nav__container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.es-dulcobis .es-nav__container a, #es-dulcobis .es-nav__container a {
+.es-dulcobis .es-nav__single, #es-dulcobis .es-nav__single {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.es-dulcobis .es-nav__single a, #es-dulcobis .es-nav__single a {
   background: rgb(0, 134, 97);
   background: linear-gradient(270deg, rgb(0, 134, 97) 0%, rgb(0, 100, 64) 56%);
   color: #eef5f3;
@@ -294,7 +302,7 @@ html {
   position: relative;
   z-index: 1;
 }
-.es-dulcobis .es-nav__container a::after, #es-dulcobis .es-nav__container a::after {
+.es-dulcobis .es-nav__single a::after, #es-dulcobis .es-nav__single a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -308,7 +316,7 @@ html {
   z-index: -1;
   transition: opacity 0.5s linear;
 }
-.es-dulcobis .es-nav__container a:hover::after, #es-dulcobis .es-nav__container a:hover::after {
+.es-dulcobis .es-nav__single a:hover::after, #es-dulcobis .es-nav__single a:hover::after {
   background: radial-gradient(circle, rgb(8, 209, 152) 0%, rgb(0, 100, 64) 100%);
   background-color: rgb(0, 134, 97);
   opacity: 1;
